@@ -1,0 +1,10 @@
+.companies {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  > img {
+    max-width: 10vw;
+  }
+}

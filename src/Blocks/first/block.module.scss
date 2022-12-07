@@ -1,0 +1,64 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+
+    & > img {
+      height: 750px;
+      left: 50%;
+      position: absolute;
+      top: 97px;
+      transform: translateX(2%);
+      width: 975px;
+      z-index: 2;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 360px;
+
+    > h1 {
+      font-size: 60px;
+      line-height: 80px;
+    }
+    > h3 {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    > div {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      > button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .block {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+
+      & > img {
+        all: unset;
+        width: 100%;
+      }
+    }
+    &__content {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}

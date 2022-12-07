@@ -1,0 +1,38 @@
+.block {
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    > h2 {
+      margin: 0;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__card {
+    display: flex;
+    gap: 16px;
+
+    > img {
+      width: 30%;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      > h2 {
+        font-size: 30px;
+      }
+
+      > h2,
+      > p,
+      > span {
+        text-align: left;
+      }
+    }
+  }
+}

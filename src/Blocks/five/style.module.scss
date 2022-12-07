@@ -1,0 +1,22 @@
+.block {
+  background-color: #0a2540;
+
+  > div {
+    display: flex;
+    gap: 16px;
+
+    > div {
+      > h2,
+      > p,
+      > span {
+        text-align: left;
+      }
+      > h2 {
+        color: #fff;
+      }
+      > p {
+        color: rgba(255, 255, 255, 0.65);
+      }
+    }
+  }
+}

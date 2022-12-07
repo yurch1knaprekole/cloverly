@@ -1,0 +1,11 @@
+.block {
+  background-color: #f2f4e8;
+  padding: 7em;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}

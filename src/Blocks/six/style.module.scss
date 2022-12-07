@@ -1,0 +1,29 @@
+.block {
+  background-color: #f5f5f5;
+
+  > div {
+    display: flex;
+    gap: 100px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      > h2,
+      > p,
+      > span {
+        text-align: left;
+      }
+
+      > div {
+        display: flex;
+        gap: 15px;
+        > div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

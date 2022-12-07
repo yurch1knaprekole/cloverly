@@ -1,0 +1,37 @@
+.block {
+  background-color: #f2f4e8;
+
+  > div {
+    display: flex;
+    gap: 12em;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    > h2,
+    > p,
+    > span {
+      text-align: left;
+    }
+
+    > button {
+      width: 30%;
+    }
+  }
+  &__cards {
+    > div {
+      > h2,
+      > p,
+      > span {
+        text-align: left;
+      }
+      > h2 {
+        font-size: 23px;
+      }
+    }
+  }
+}
